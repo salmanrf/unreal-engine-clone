@@ -23,14 +23,19 @@ module.exports = {
         12: "3rem",
         12.5: "3.125rem",
         13: "3.25rem",
+        14: "3.5rem",
         26: "6.5rem",
       },
       fontSize: {
         xxs: "0.6875rem",
+        "xs-1": "0.8125rem",
       },
+
       backgroundImage: {
         "blue-gradient":
           "radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%)",
+        "blue-gradient-glow":
+          "radial-gradient(100% 100% at 100% 100%, rgb(0, 171, 245) 0%, rgb(0, 171, 245) 100%) 5 / 1 / 0 stretch",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

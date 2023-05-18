@@ -11,3 +11,44 @@
 body {
   background: white;
 }
+
+.scroll-down-indicator {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-down-indicator > div {
+  position: absolute;
+  transform: translateY(-100%);
+  animation: scroll-down 1.5s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.btn-blue {
+  border-image: radial-gradient(
+      100% 185.14% at 100% 100%,
+      rgb(52, 195, 255) 0%,
+      rgb(51, 142, 238) 100%
+    )
+    5 / 2px / 0 stretch;
+  transition: all 0.25s cubic-bezier(0, 0.42, 0.2, 0.99) 0s;
+  cursor: pointer;
+}
+
+.btn-blue:hover {
+  border-image: radial-gradient(100% 100% at 100% 100%, rgb(0, 171, 245) 0%, rgb(0, 171, 245) 100%)
+    5 / 1 / 0 stretch;
+}
