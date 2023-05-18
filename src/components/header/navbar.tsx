@@ -8,11 +8,11 @@ export function Navbar() {
   const [navIsShown, toggleShowNav] = useToggle(false);
 
   return (
-    <div className="self-stretch flex-shrink-0 flex flex-col items-center bg-darkerBlue overflow-x-hidden overflow-y-visible">
+    <div className="self-stretch flex-shrink-0 flex flex-col items-center bg-darkerBlue">
       <HamburgerBtn onClick={toggleShowNav} isActive={navIsShown} />
       <nav
-        className={`absolute top-full ${
-          navIsShown ? "right-0" : "-right-full"
+        className={`fixed top-13 right-0 ${
+          navIsShown ? "translate-x-0" : "translate-x-full"
         } w-[calc(100%-48px)] h-[calc(100vh-52px)] bg-darkerBlue text-whiteSemiTransparent transition-all ease-in-out duration-200 `}
       >
         <div className="w-full h-full flex flex-col justify-between">
