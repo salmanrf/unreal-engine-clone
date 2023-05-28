@@ -52,3 +52,12 @@ body {
   border-image: radial-gradient(100% 100% at 100% 100%, rgb(0, 171, 245) 0%, rgb(0, 171, 245) 100%)
     5 / 1 / 0 stretch;
 }
+
+.premises-item:nth-child(odd) {
+  margin-right: 5rem;
+}
+
+.premises-item:nth-child(even) {
+  margin-right: 0;
+  margin-left: 5rem;
+}
