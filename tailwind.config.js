@@ -30,7 +30,12 @@ module.exports = {
         xxs: "0.6875rem",
         "xs-1": "0.8125rem",
       },
-
+      fontFamily: {
+        "brutal-light": ["var(--font-brutal-light)"],
+        "brutal-regular": ["var(--font-brutal-regular)"],
+        "brutal-bold": ["var(--font-brutal-bold)"],
+        "fira-mono": ["var(--font-fira-mono)"],
+      },
       backgroundImage: {
         "blue-gradient":
           "radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%)",
