@@ -5,10 +5,6 @@ export default function HeroBackground() {
   const [scrollPercentage, setScrollPercentage] = useState<number>(0);
 
   useEffect(() => {
-    console.log("ref", ref);
-  }, [ref]);
-
-  useEffect(() => {
     window.addEventListener("scroll", detectScrollPosition);
 
     return () => window.removeEventListener("scroll", detectScrollPosition);

@@ -53,11 +53,37 @@ body {
     5 / 1 / 0 stretch;
 }
 
-.premises-item:nth-child(odd) {
-  margin-right: 5rem;
+.features-item {
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+  transform: translateY(2rem);
 }
 
-.premises-item:nth-child(even) {
-  margin-right: 0;
-  margin-left: 5rem;
+.item-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.features-item:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.features-item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.features-item .text {
+  padding-bottom: 2rem;
+}
+
+.features-item:nth-child(odd) .text {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+.features-item:nth-child(even) .text {
+  text-align: right;
+  padding-right: 2rem;
+  padding-left: 0;
 }
