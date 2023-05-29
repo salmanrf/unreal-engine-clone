@@ -1,11 +1,5 @@
-import { HeroSection } from "@/components";
-import { FeaturesContainer } from "@/components/features";
+import { HomepageView } from "@/views";
 
 export default function Homepage() {
-  return (
-    <div className="w-full min-h-screen flex flex-col bg-darkerBlue">
-      <HeroSection />
-      <FeaturesContainer />
-    </div>
-  );
+  return <HomepageView />;
 }
