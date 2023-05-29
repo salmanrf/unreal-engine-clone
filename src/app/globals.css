@@ -59,9 +59,9 @@ body {
   transform: translateY(2rem);
 }
 
-.item-visible {
-  opacity: 1;
-  transform: translateY(0);
+.item-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
 }
 
 .features-item:nth-child(odd) {
@@ -86,4 +86,14 @@ body {
   text-align: right;
   padding-right: 2rem;
   padding-left: 0;
+}
+
+.news-title {
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.item-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
