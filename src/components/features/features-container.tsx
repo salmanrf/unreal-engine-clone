@@ -25,8 +25,6 @@ export default function FeaturesContainer() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("item-visible");
-      } else {
-        entry.target.classList.remove("item-visible");
       }
     });
   }

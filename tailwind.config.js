@@ -7,18 +7,23 @@ module.exports = {
   ],
   theme: {
     colors: {
+      primaryGrey: "rgb(219, 222, 227)",
+      secondaryGrey: "rgb(56, 59, 80)",
       grey: "rgb(32, 35, 55)",
       lightBlue: "rgb(0, 157, 223)",
       darkBlue: "rgb(32, 35, 55)",
       darkerBlue: "rgb(14, 17, 40)",
       white: "#FFFFFF",
       black: "#000000",
+      primaryDark: "rgb(20 20 20)",
+      secondaryDark: "rgb(56, 59, 80)",
       whiteSemiTransparent: "rgba(255, 255, 255, 0.87)",
       whiteBorder: "rgb(56, 59, 80)",
     },
     extend: {
       spacing: {
         0.75: "0.1875rem",
+        5.5: "1.375rem",
         7.5: "1.875rem",
         12: "3rem",
         12.5: "3.125rem",
@@ -29,6 +34,8 @@ module.exports = {
       fontSize: {
         xxs: "0.6875rem",
         "xs-1": "0.8125rem",
+        "1.5xl": "1.375rem",
+        "4.5xl": "2.5rem",
       },
       fontFamily: {
         "brutal-light": ["var(--font-brutal-light)"],
